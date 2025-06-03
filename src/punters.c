@@ -7,9 +7,7 @@ int main()
 {
 	printf("Hello World\n");
 
-	char myChar = 3325522;  // A variable
-
-	double myAge = 43.10000004;     // A variable
+	double myAge = 43.1004;     // A variable
 	double* ptr = &myAge;  // A pointer variable, with the name ptr, that stores the address of myAge
 
 	// Output the value of myAge (43)
@@ -23,6 +21,19 @@ int main()
 	// Output the memory address of myAge with the pointer (0x7ffe5367e044)
 	printf("%p\n", ptr);	
 	// Dereference: Output the value of myAge with the pointer (43)
-	printf("%f years olda\n", *ptr);	
+	printf("%f years old\n", *ptr);	
+
+
+	scanf("%lf", &myAge); // Read a double value from the user and store it in myAge
+
+	// Output the value of myAge
+	printf("%f years old\n", myAge);
+
+	char name[20];
+	scanf("%s", name); // Read a string from the user and store it in name
+	// Output the string		
+	printf("Hello %s\n", name);
+
+
 	return 0;
 }
