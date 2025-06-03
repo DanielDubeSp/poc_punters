@@ -1,6 +1,10 @@
 {
-    "name": "UOC. Sistemes operatius",
-    // "dockerFile": "../Dockerfile",
-    "dockerComposeFile": "../docker-compose.yml"
-    
+    // From https://github.com/microsoft/vscode-dev-containers/tree/main/container-templates/docker-compose/.devcontainer
+    "name": "UOC. POC Punters",
+    "dockerComposeFile": "docker-compose.yml",
+    "workspaceFolder": "/workspace",
+    "service": "app",
+    "shutdownAction": "stopCompose",
+    "overrideCommand": true,
+    "remoteUser": "vscode"
 }
