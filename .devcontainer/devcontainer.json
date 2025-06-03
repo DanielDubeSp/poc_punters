@@ -1,4 +1,6 @@
 {
     "name": "UOC. Sistemes operatius",
-    "image" : "mcr.microsoft.com/devcontainers/cpp:1-debian-12"
+    // "dockerFile": "../Dockerfile",
+    "dockerComposeFile": "../docker-compose.yml"
+    
 }
